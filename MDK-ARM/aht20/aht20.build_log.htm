@@ -1,0 +1,106 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.30.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: hossein beiranvand, university of isfahan, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.30.0.0
+Toolchain Path:  D:\arm-core\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.30.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.42.0.0
+ 
+<h2>Project:</h2>
+D:\keil\aht20\MDK-ARM\aht20.uvprojx
+Project File Date:  03/08/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\arm-core\ARM\ARMCC\Bin'
+Rebuild target 'aht20'
+assembling startup_stm32f103xb.s...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_ll_rcc.c...
+compiling stm32f1xx_ll_gpio.c...
+compiling stm32f1xx_hal_i2c.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_msp.c...
+compiling main.c...
+../Core/Src/main.c(58): warning:  #1295-D: Deprecated declaration clear_screen - give arg types
+  void clear_screen();
+../Core/Src/main.c(62): warning:  #1295-D: Deprecated declaration reset_lcd - give arg types
+  void reset_lcd();
+../Core/Src/main.c(64): warning:  #1295-D: Deprecated declaration init_nokia5110 - give arg types
+  void init_nokia5110();
+../Core/Src/main.c(67): warning:  #1295-D: Deprecated declaration aht20_init_parms - give arg types
+  void aht20_init_parms();
+../Core/Src/main.c(68): warning:  #1295-D: Deprecated declaration check_calibration_enable_bit - give arg types
+  int check_calibration_enable_bit();
+../Core/Src/main.c(69): warning:  #1295-D: Deprecated declaration send_init_command - give arg types
+  int send_init_command();
+../Core/Src/main.c(70): warning:  #1295-D: Deprecated declaration send_measurment_command - give arg types
+  int send_measurment_command();
+../Core/Src/main.c(72): warning:  #1295-D: Deprecated declaration read_measurment_status - give arg types
+  int read_measurment_status();
+../Core/Src/main.c(73): warning:  #1295-D: Deprecated declaration init_aht20 - give arg types
+  int init_aht20();
+../Core/Src/main.c(706): warning:  #940-D: missing return statement at end of non-void function "init_aht20" 
+  }
+../Core/Src/main.c: 10 warnings, 0 errors
+compiling stm32f1xx_ll_exti.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_ll_utils.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_exti.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_ll_dma.c...
+compiling stm32f1xx_ll_spi.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_tim.c...
+linking...
+Program Size: Code=9440 RO-data=300 RW-data=24 ZI-data=1144  
+FromELF: creating hex file...
+"aht20\aht20.axf" - 0 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_aht20
+  D:\arm-pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\arm-pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:25
+</pre>
+</body>
+</html>
